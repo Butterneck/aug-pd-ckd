@@ -10,5 +10,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
     distName: 'aug_pd_cdk',
     module: 'aug_pd_cdk',
   },
+  gitignore: [
+    ".venv",
+  ]
 });
 project.synth();
